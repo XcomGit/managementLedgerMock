@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PC管理台帳</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/common.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="container">
+        <div class="page-header">
+            <h1>PC管理台帳</h1>
+        </div>
+
+        <div>
+            <ul class="nav nav-tabs nav-justified">
+                <li role="presentation"><a href="list.html">PC管理台帳</a></li>
+                <li role="presentation"><a href="./history.html">変更履歴</a></li>
+            </ul>
+        </div>
+        <div class="margin_top_bottom"></div>
+
+        <form action="regist_check.html" class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">PC番号</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="" placeholder="xxx-xxxxx" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">社員番号</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="" placeholder="xxxxxx" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">管理用ステータス</label>
+                <div class="col-sm-2">
+                    <select class="form-control" id="">
+                        <option>利用中</option>
+                        <option>割当済</option>
+                        <option>回収待</option>
+                        <option>在庫</option>
+                        <option>廃棄予定</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">部署</label>
+                <div class="col-sm-2">
+                    <select class="form-control" id="">
+                        <option>―</option>
+                        <option>管理部</option>
+                        <option>業務部</option>
+                        <option>空港統括部</option>
+                        <option>マーケティング部</option>
+                        <option>営業部</option>
+                        <option>システム部</option>
+                        <option>クリニック統括部</option>
+                        <option>社長室</option>
+                    </select>
+                </div>
+            </div>
+           
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">グループ</label>
+                <div class="col-sm-2">
+                    <select class="form-control" id="">
+                        <option>―</option>
+                        <option>財務経理G</option>
+                        <option>総務G</option>
+                        <option>ロジスティクスG</option>
+                        <option>カスタマーG</option>
+                        <option>コールG 東京</option>
+                        <option>コールG 名古屋</option>
+                        <option>コールG 大阪</option>
+                        <option>国際G</option>
+                        <option>テクニカルG</option>
+                        <option>受付G</option>
+                        <option>新千歳空港</option>
+                        <option>中部空港</option>
+                        <option>中部空港T1_2号店</option>
+                        <option>中部空港T2号店</option>
+                        <option>羽田空港</option>
+                        <option>成田空港</option>
+                        <option>関西空港</option>
+                        <option>福岡空港</option>
+                        <option>マーケティングG</option>
+                        <option>営業部(東京)</option>
+                        <option>営業部(大阪)</option>
+                        <option>営業部(福岡)</option>
+                        <option>営業部(名古屋)</option>
+                        <option>営業部(札幌支店)</option>
+                        <option>人材開発G</option>
+                        <option>新卒一時払い出し</option>
+                        <option>システム部</option>
+                        <option>取締役</option>
+                        <option>監査役</option>
+                        <option>クリニック統括部</option>
+                        <option>空港統括部</option>
+                        <option>代表取締役社長</option>
+                        <option>業務部</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">社員区分</label>
+                <div class="col-sm-2">
+                    <select class="form-control" id="">
+                        <option>―</option>
+                        <option>正規社員</option>
+                        <option>派遣社員</option>
+                        <option>非常勤</option>
+                        <option>アルバイト</option>
+                        <option>その他利用</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">社員部署</label>
+                <div class="col-sm-2">
+                    <select class="form-control" id="">
+                        <option>―</option>
+                        <option>社長室</option>
+                        <option>空港統括部</option>
+                        <option>業務部</option>
+                        <option>管理部</option>
+                        <option>営業部</option>
+                        <option>マーケティング部</option>
+                        <option>システム部</option>
+                        <option>クリニック統括部</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">社員名</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="" placeholder="xxxx">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">退職日</label>
+                <div class="col-sm-2">
+                    <input type="date" class="form-control" id="" placeholder="xxxx/xx/xx">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">利用用途区分</label>
+                <div class="col-sm-2">
+                    <select class="form-control" id="">
+                        <option>個別利用</option>
+                        <option>共同利用(空港除く)</option>
+                        <option>空港共同利用</option>
+                        <option>在庫</option>
+                        <option>割当済</option>
+                        <option>回収待</option>
+                        <option>廃棄予定</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">利用詳細</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="" placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">種別</label>
+                <div class="col-sm-2">
+                    <select class="form-control" id="">
+                        <option>ディスクトップ</option>
+                        <option>ノート</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">OS</label>
+                <div class="col-sm-2">
+                    <select class="form-control" id="">
+                        <option>Win7</option>
+                        <option>Win10</option>
+                        <option>Win10(U)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">ESET</label>
+                <div class="col-sm-2">
+                    <select class="form-control" id="">
+                        <option>Ｏ</option>
+                        <option>Ｘ</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">場所</label>
+                <div class="col-sm-2">
+                    <select class="form-control" id="">
+                        <option>本社26F</option>
+                        <option>ロジ11F</option>
+                        <option>ロジB1F</option>
+                        <option>倉庫</option>
+                        <option>支店</option>
+                        <option>羽田空港店</option>
+                        <option>関西空港T1</option>
+                        <option>関西空港T1_4F</option>
+                        <option>関西空港店</option>
+                        <option>関西空港店 T2 出発</option>
+                        <option>新千歳空港店</option>
+                        <option>成田空港店</option>
+                        <option>中部空港T1_2号店</option>
+                        <option>中部空港T2店</option>
+                        <option>中部空港店</option>
+                        <option>福岡空港店</option>
+                        <option>渋谷院</option>
+                        <option>銀座院</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">モニター台数</label>
+                <div class="col-sm-2">
+                    <select class="form-control" id="">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">機種</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="" placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">購入時期</label>
+                <div class="col-sm-2">
+                    <input type="date" class="form-control" id="" placeholder="xxxx/xx/xx">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">修正日</label>
+                <div class="col-sm-2">
+                    <input type="date" class="form-control" id="" placeholder="xxxx/xx/xx">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">確認者</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="" placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="">備考</label>
+                <div class="col-sm-10">
+                    <textarea placeholder="" rows="3" class="form-control" id=""></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <!--
+                    <input type="button" class="btn btn-info" onclick="location.href='regist_check.html'" value="確認">
+                    -->
+                    <button type="submit" class="btn btn-info">確認</button>
+                    
+               </div>
+            </div>
+        </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
