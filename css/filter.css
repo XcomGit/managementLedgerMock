@@ -103,5 +103,4 @@
     text-align    : center;            /* 文字位置   */
     padding       : 3px 5px;           /* 余白       */
     border        : 1px #666666 solid; /* 罫線       */
-    white-space   : nowrap;
   }
